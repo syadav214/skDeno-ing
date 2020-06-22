@@ -5,7 +5,7 @@ const { test } = Deno;
 const app = new App();
 
 app.get("/test", (response: Response) => {
-  return response.send("this is test endpoint");
+  return response.send("this is get endpoint");
 });
 
 test("route not found", async () => {
